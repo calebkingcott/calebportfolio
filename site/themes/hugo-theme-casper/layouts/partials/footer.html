@@ -5,9 +5,20 @@
         {{end}}
     </footer>
     </div>
-    <script type="text/javascript" src="{{.Site.BaseURL}}js/jquery.js"></script>
-    <script type="text/javascript" src="{{.Site.BaseURL}}js/jquery.fitvids.js"></script>
-    <script type="text/javascript" src="{{.Site.BaseURL}}js/index.js"></script>
+    <script type="text/javascript" src="{{.Site.BaseURL}}js/core.jquery.js"></script>
+    <script type="text/javascript" src="{{.Site.BaseURL}}js/main.functions.js"></script>
+    <script type="text/javascript" src="{{.Site.BaseURL}}js/plugin.animate.js"></script>
+
+        <script type="text/javascript" src="{{.Site.BaseURL}}js/plugin.imagesloaded.pkgd.js"></script>
+        <script type="text/javascript" src="{{.Site.BaseURL}}js/plugin.in-viewport.js"></script>
+                <script type="text/javascript" src="{{.Site.BaseURL}}js/plugin.isotope.pkgd.min.js"></script>
+        <script type="text/javascript" src="{{.Site.BaseURL}}js/plugin.ScrollToPlugin.min.js"></script>
+        <script type="text/javascript" src="{{.Site.BaseURL}}js/plugin.SplitText.js"></script>
+        <script type="text/javascript" src="{{.Site.BaseURL}}js/plugin.touchSwipe.min.js"></script>
+        <script type="text/javascript" src="{{.Site.BaseURL}}js/plugin.TweenMax.min.js"></script>
+        <script type="text/javascript" src="{{.Site.BaseURL}}js/plugin.typed.min.js"></script>
+
+
     {{ if .Site.Params.customFooterPartial }}
         {{ partial .Site.Params.customFooterPartial . }}
     {{ end }}
